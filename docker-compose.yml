@@ -19,6 +19,7 @@ services:
       - NODE_ENV=production
       - WEBHOOK_URL=https://${DOMAIN}/
       - GENERIC_TIMEZONE=${GENERIC_TIMEZONE}
+      - NODE_FUNCTION_ALLOW_EXTERNAL=uuid
     volumes:
       - ./volumes/n8n:/home/node/.n8n
     labels:
